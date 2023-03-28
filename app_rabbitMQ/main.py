@@ -7,11 +7,11 @@ from Worcker import Worcker
 
 
 
-
+print(config("REBBITMQ_URL"), config("RABBITMQ_DEFAULT_USER"))
 
 async def start_send():
     async with WorckerClientContextManager(url_rabbit=config("REBBITMQ_URL"), user=config("RABBITMQ_DEFAULT_USER"), password=config("RABBITMQ_DEFAULT_PASS")) as connection:
-        await asyncio.gather(asyncio.create_task(Worcker_Client.put(connection=connection, message_data="23dfsdfsdfdsffsadfsddsadfsa", queue_name='hello')))
+        await Worcker_Client.put(connection=connection, message_data="23dfsdfsdfdsffsadfsddsadfsa", queue_name='hello')
 
 
 async def start_resive():
