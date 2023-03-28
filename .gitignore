@@ -1,0 +1,9 @@
+.idea/
+.env
+__pycache__/
+.idea/misc.xml
+.DS_Store
+.idea/ASYNCIOCONNECTORS.iml
+app_rabbitMQ/__pycache__/Worcker.cpython-310.pyc
+app_rabbitMQ/__pycache__/WorckerClient.cpython-310.pyc
+venv
