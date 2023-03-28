@@ -3,7 +3,7 @@ from types import TracebackType
 from aio_pika import connect, Message
 from settings import settings
 
-
+print(settings.rabbit_dsn)
 class RabbitClient:
 
     def __init__(self):
